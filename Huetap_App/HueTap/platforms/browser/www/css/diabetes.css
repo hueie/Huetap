@@ -1,0 +1,357 @@
+img.diabetes_morning_white{
+    background-image: url(../img/diabetes/morning_white.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+img.diabetes_morning_green{
+    background-image: url(../img/diabetes/morning_green.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+img.diabetes_morning_yellow{
+    background-image: url(../img/diabetes/morning_yellow.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+img.diabetes_morning_red{
+    background-image: url(../img/diabetes/morning_red.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+img.diabetes_noon_white{
+    background-image: url(../img/diabetes/noon_white.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+img.diabetes_noon_green{
+    background-image: url(../img/diabetes/noon_green.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+img.diabetes_noon_yellow{
+    background-image: url(../img/diabetes/noon_yellow.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+img.diabetes_noon_red{
+    background-image: url(../img/diabetes/noon_red.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+img.diabetes_night_white{
+    background-image: url(../img/diabetes/night_white.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+img.diabetes_night_green{
+    background-image: url(../img/diabetes/night_green.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+img.diabetes_night_yellow{
+    background-image: url(../img/diabetes/night_yellow.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+img.diabetes_night_red{
+    background-image: url(../img/diabetes/night_red.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+input[type=checkbox].diabetes_exerciseCheck  + label
+{
+    background-image: url(../img/diabetes/exercise_white.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=checkbox]:checked.diabetes_exerciseCheck  + label
+{
+    background-image: url(../img/diabetes/exercise_red.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin:0;
+}
+
+
+input[type=checkbox].diabetes_pillCheck  + label
+{
+    background-image: url(../img/diabetes/pill_white.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=checkbox]:checked.diabetes_pillCheck  + label
+{
+    background-image: url(../img/diabetes/pill_red.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin:0;
+}
+
+input[type=checkbox].diabetes_injectionCheck  + label
+{
+    background-image: url(../img/diabetes/injection_white.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=checkbox]:checked.diabetes_injectionCheck  + label
+{
+    background-image: url(../img/diabetes/injection_red.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin:0;
+}
+
+input[type=checkbox].diabetes_hospitalCheck  + label
+{
+    background-image: url(../img/diabetes/hospital_white.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=checkbox]:checked.diabetes_hospitalCheck  + label
+{
+    background-image: url(../img/diabetes/hospital_red.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin:0;
+}
+
+/* LIST ICON */
+.diabetes_morning_green {
+    background-image: url(../img/diabetes/morning_green.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.diabetes_morning_yellow {
+    background-image: url(../img/diabetes/morning_yellow.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.diabetes_morning_red {
+    background-image: url(../img/diabetes/morning_red.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.diabetes_noon_green {
+    background-image: url(../img/diabetes/noon_green.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.diabetes_noon_yellow {
+    background-image: url(../img/diabetes/noon_yellow.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+
+.diabetes_noon_red {
+    background-image: url(../img/diabetes/noon_red.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.diabetes_night_green {
+    background-image: url(../img/diabetes/night_green.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.diabetes_night_yellow {
+    background-image: url(../img/diabetes/night_yellow.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.diabetes_night_red {
+    background-image: url(../img/diabetes/night_red.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.diabetes_exercise_red {
+    background-image: url(../img/diabetes/exercise_red.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.diabetes_pill_red {
+    background-image: url(../img/diabetes/pill_red.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.diabetes_injection_red {
+    background-image: url(../img/diabetes/injection_red.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.diabetes_hospital_red {
+    background-image: url(../img/diabetes/hospital_red.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+/* list */
+
+.diabetes_think_white_icon {
+    background-image: url(../img/diabetes/think_white_icon.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.diabetes_history_white_icon {
+    background-image: url(../img/diabetes/history_white_icon.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.diabetes_exclamation_mark_white_icon {
+    background-image: url(../img/diabetes/exclamation_mark_white_icon.png);
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    padding: 0;
+    margin: 2px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <style>
+        .opacity_bg_layer {display:none;position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:.5; filter:alpha(opacity=50); z-index:10;}
+    </style>
+    <script type="text/javascript">
+        /* 불투명 배경 레이어 뛰우기 */
+        function opacity_bg_layer() {
+            if(!$('.opacity_bg_layer').length) { // 불투명 배경 레이어가 없으면 생성
+                $('<div class="opacity_bg_layer"></div>').appendTo($('body'));
+            }
+
+            var oj = $(".opacity_bg_layer");
+
+            // 화면의 가로, 세로 알아내기
+            var w = $(document).width();
+            var h = $(document).height();
+
+            oj.css({'width':w,'height':h}); // 불투명 배경 레이어 크기 설정
+            oj.fadeIn(500); // 불투명 배경 레이어 보이기(속도:0.5초)
+        }
+        /* 레이어 닫기 */
+        function layer_pop_close() {
+            if($('.opacity_bg_layer').length) { // 불투명 배경 레이어가 실행된 상태에서만 진행
+                                                // 불투명 배경 레이어 삭제(속도:0.5초)
+                var oj = $('.opacity_bg_layer');
+                oj.fadeOut(500, function() {
+                    oj.remove();
+                });
+            }
+        }
+        // 브라우저 창 크기 변경에 따른 처리
+        $(window).resize(function() {
+            if($('.opacity_bg_layer').length) { // 불투명 배경 레이어가 실행된 상태에서만 진행
+                opacity_bg_layer();
+            }
+        });
+        /* 화면을 불러온 후 처리 */
+        $(document).ready(function() {
+            opacity_bg_layer();
+
+            $(document).on('tap', '.opacity_bg_layer', function() { // 불투명 배경 레이어를 클릭하면 닫기
+                layer_pop_close();
+            }).keyup(function(e) { // esc 키 사용하면 불투명 배경 레이어 닫기
+                if(e.keyCode == 27) layer_pop_close();
+            }).on('tap', '.opacity_bg_layer_show', function() { // "배경용 불투명 레이어 띄우기"를 클릭하면 불투명 배경 레이어 보이기
+                opacity_bg_layer();
+            });
+        });
+    </script>
+</head>
+<body>
+<div><a href="#" class="opacity_bg_layer_show">배경용 불투명 레이어 띄우기</a></div>
+</body>
+</html>

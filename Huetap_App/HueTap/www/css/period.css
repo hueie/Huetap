@@ -1,0 +1,300 @@
+
+input[type=checkbox].heartCheck  + label
+{
+    background-image: url(../img/period/heart_white_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=checkbox]:checked.heartCheck  + label
+{
+    background-image: url(../img/period/heart_pink_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin:0;
+}
+
+input[type=checkbox].heartblankCheck  + label
+{
+    background-image: url(../img/period/heartblank_white_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=checkbox]:checked.heartblankCheck  + label
+{
+    background-image: url(../img/period/heartblank_pink_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin:0;
+}
+
+input[type=checkbox].pillCheck  + label
+{
+    background-image: url(../img/period/pill_white_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=checkbox]:checked.pillCheck  + label
+{
+    background-image: url(../img/period/pill_pink_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin:0;
+}
+
+input[type=checkbox].hospitalCheck  + label
+{
+    background-image: url(../img/period/hospital_white_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=checkbox]:checked.hospitalCheck  + label
+{
+    background-image: url(../img/period/hospital_pink_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin:0;
+}
+input[type=checkbox].startCheck  + label
+{
+    background-image: url(../img/period/blood_start_white_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=checkbox]:checked.startCheck  + label
+{
+    background-image: url(../img/period/blood_start_pink_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin:0;
+}
+
+
+input[type=checkbox].endCheck + label
+{
+    background-image: url(../img/period/blood_stop_white_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.start_gray_icon {
+    background-image: url(../img/period/blood_start_gray_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.end_gray_icon {
+    background-image: url(../img/period/blood_stop_gray_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+
+input[type=checkbox]:checked.endCheck  + label
+{
+    background-image: url(../img/period/blood_stop_lightcyan_icon.png);
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display:inline-block;
+    padding: 0;
+    margin:0;
+}
+
+
+.small_ovum_pink_icon {
+    background-image: url(../img/period/small_ovum_pink_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.big_ovum_deeppink_icon {
+    background-image: url(../img/period/big_ovum_deeppink_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.blood_start_pink_icon {
+    background-image: url(../img/period/blood_start_pink_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.blood_start_deeppink_icon {
+    background-image: url(../img/period/blood_start_deeppink_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.blood_start_lightcyan_icon {
+    background-image: url(../img/period/blood_start_lightcyan_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.blood_start_blue_icon {
+    background-image: url(../img/period/blood_start_blue_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.heart_pink_icon {
+    background-image: url(../img/period/heart_pink_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.heartblank_pink_icon {
+    background-image: url(../img/period/heartblank_pink_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.condom_lightcyan_icon {
+    background-image: url(../img/period/protection_lightcyan_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.condom_pink_icon {
+    background-image: url(../img/period/protection_pink_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.pill_pink_icon {
+    background-image: url(../img/period/pill_pink_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.hospital_pink_icon {
+    background-image: url(../img/period/hospital_pink_icon.png);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+/* list */
+
+.think_white_icon {
+    background-image: url(../img/period/think_white_icon.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.history_white_icon {
+    background-image: url(../img/period/history_white_icon.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.exclamation_mark_white_icon {
+    background-image: url(../img/period/exclamation_mark_white_icon.png);
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    padding: 0;
+    margin: 2;
+}

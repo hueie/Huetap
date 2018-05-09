@@ -1,0 +1,38 @@
+<div id="calendarPage">
+    <table id="menuTable">
+
+    </table>
+
+    <div id="entryList"  >
+        <table id="entryTable" ><tbody>
+        </tbody></table>
+    </div>
+</div>
+
+<script language="JavaScript">
+function calMenu(){
+
+    var contents = "<table id='menuTable'  width='100%' style='color:"+themeColorMain+";border-color: "+themeColorMain+";font-family: nanum-barun-gothic-bold;' >"+
+            "<tr style='height:"+calMenuHeight+"px; '>"+
+            "<td style='height:"+calMenuHeight+"px; font-size: "+calMenuHeight/3+"px;'>"+
+                "<span id='year'></span><span id='month'></span><span id='date'></span><span id='day'></span>" +
+            "</td>"+
+            "<td width='"+calMenuHeight+"px' style='background-color: lightcyan;text-align: center; height: "+calMenuHeight+"px;'>"+
+            "<a  class='calMenu' style='padding-top:"+calMenuHeight*(1/8)+"px; height: "+calMenuHeight*(7/8)+"px;' id='addEntryBtn1'><div class='search_icon' style='height: "+calMenuHeight*(6/8)+"px;width: "+calMenuHeight*(6/8)+"px;'></div></a>"+
+            "</td>"+
+            "<td width='"+calMenuHeight+"px' style='background-color: powderblue;text-align: center;height: "+calMenuHeight+"px;'>"+
+            "<a  class='calMenu' style='padding-top:"+calMenuHeight*(1/8)+"px; height: "+calMenuHeight*(7/8)+"px;' id='addEntryBtn2'><div class='month_icon' style='height: "+calMenuHeight*(6/8)+"px;width: "+calMenuHeight*(6/8)+"px;'></div></a>"+
+            "</td>"+
+            "<td width='"+calMenuHeight+"px' style='background-color: lightskyblue;text-align: center;height: "+calMenuHeight+"px;'>"+
+            "<a  class='calMenu' style='padding-top:"+calMenuHeight*(1/8)+"px; height: "+calMenuHeight*(7/8)+"px;' id='addEntryBtn3'><div class='year_icon' style='height: "+calMenuHeight*(6/8)+"px;width: "+calMenuHeight*(6/8)+"px;'></div></a>"+
+            "</td>"+
+            "<td width='"+calMenuHeight+"px' style='background-color: deepskyblue;text-align: center;height: "+calMenuHeight+"px;'>"+
+            "<a  class='calMenu' style='padding-top:"+calMenuHeight*(1/8)+"px; height: "+calMenuHeight*(7/8)+"px;' id='addEntryBtn4' ><div class='info_icon' style='height: "+calMenuHeight*(6/8)+"px;width: "+calMenuHeight*(6/8)+"px;'></div></a>"+
+            "</td>"+
+            "</tr>"+
+    "</table>";
+
+    $('#menuTable').replaceWith(contents);
+}
+calMenu();
+</script>

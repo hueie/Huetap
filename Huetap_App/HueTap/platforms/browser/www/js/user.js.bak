@@ -1,0 +1,134 @@
+var glbSignedUserEmail="";
+
+var user = new User();
+function User() {
+}
+User.prototype.signInUser = function (data, callBack) {
+    calendar.db.transaction(
+        function (t) {
+            t.executeSql('select count(*) cnt from huetap_user where user_email = ? and user_pw = ?', [data.user_email, data.user_pw],
+                function (t, results) {
+					if (results.rows.length == 0) return;
+					
+					var cnt = results.rows.item(0)['cnt'];
+					callBack(cnt);
+					
+                }, calendar.dbErrorHandler);
+        },
+		calendar.dbErrorHandler, function () { }
+	);
+};
+User.prototype.signUpUser = function (data, callback) {
+    calendar.db.transaction(
+        function (t) {
+            t.executeSql('insert into huetap_user(user_email, user_pw, signup_dt , status) values(?, ?, ?, ?)', [data.user_email, data.user_pw, data.signup_dt, data.status],
+                function () {//성공시
+					callback(); //2
+                }, 
+				function () {//실패시
+					alert('Email Already Exist!'); //2
+                } 
+			);
+        },
+        calendar.dbErrorHandler, null 
+	);
+};
+
+User.prototype.signOutUser = function (data, callback) {    
+	glbSignedUserEmail = "";
+	initBgImg();
+	menuTypeChange('hueie');
+	pageLoad('calendar.html');
+};
+
+$(document).on("tap", "#addUserSubmit", function (e) {
+    //grab the values
+    var user_email = "";var user_pw = "";var signup_dt = "";var status = "1";
+	var user_pwConfirm = "";
+	//0 로그 오프 1 로그인 2 오토로그인
+
+        if ($("#user_email").val() != "" ) { user_email = $("#user_email").val(); }
+        if ($("#user_pw").val() != "" ) { user_pw = $("#user_pw").val(); }
+		if ($("#user_pwConfirm").val() != "" ) { user_pwConfirm = $("#user_pwConfirm").val(); }
+
+		
+/*
+		if ($("#status").val() != "" ) { status = $("#status").val(); }
+        if ($("#info_6").prop('checked') == true) { info_6 = 1; }
+*/
+    //store!
+    if ($("#signType").val() == 0) {
+		
+        user.signInUser({ //Sign In
+            user_email: user_email,
+            user_pw: user_pw
+        }, function (cnt) {
+			//	alert(cnt);
+			if (cnt == 0 )
+			{
+				alert('User or Password Incorrect!');
+			} else {
+				if($('#popup').length) { // 불투명 배경 레이어가 실행된 상태에서만 진행
+				// 불투명 배경 레이어 삭제(속도:0.5초)
+					var oj = $('#popup');
+					oj.remove();
+				}
+				if($('.sign_white_layer').length) { // 불투명 배경 레이어가 실행된 상태에서만 진행
+				// 불투명 배경 레이어 삭제(속도:0.5초)
+				var oj = $('.sign_white_layer');
+				oj.remove();
+				}	
+				if($('.sign_bg_layer').length) { // 불투명 배경 레이어가 실행된 상태에서만 진행
+				// 불투명 배경 레이어 삭제(속도:0.5초)
+				var oj = $('.sign_bg_layer');
+				oj.remove();
+				}
+			} 
+        });
+    } else if ($("#signType").val() == 1) {
+		
+		if( user_pw != user_pwConfirm){
+			alert('Check password!');
+			$("#user_pwConfirm").val("");
+			$("#user_pw").val("");
+			return;
+		}
+
+		var today = new Date();
+		var yyyy = today.getFullYear();
+		var mm = today.getMonth()+1; //January is 0!
+		var dd = today.getDate();
+		var hh = today.getHours(); // => 9
+		var mn = today.getMinutes(); // =>  30
+		var ss = today.getSeconds(); // => 51
+
+		if(mm<10){
+			mm='0'+mm
+		} 
+		if(dd<10){
+			dd='0'+dd
+		} 
+		if(hh<10){
+			hh='0'+hh
+		} 
+		if(mn<10){
+			mn='0'+mn
+		} 
+		if(ss<10){
+			ss='0'+ss
+		} 
+		signup_dt = yyyy+'/'+mm+'/'+dd +' '+hh+':'+mn +':'+ss;
+
+        user.signUpUser({ //Sign Up
+            user_email: user_email,
+            user_pw: user_pw,
+            signup_dt: signup_dt,
+            status: status
+        }, function () {
+			alert('Sign Up!');
+            removeInitSign();
+        });
+    }
+	glbSignedUserEmail = user_email;
+	$("#signedUserEmail").val(user_email);
+});
